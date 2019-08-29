@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+<form action="{% url 'two:login' %}" method="post">
+
+    {% csrf_token %}
+
+
+{#    <input type="hidden" name="csrfmiddlewaretoken" value="xvHGTCuXBvJ0MLts9GMfkFpispNaqlBsiHJTgMCVuPE6wsf0ijFVqkYtkyZjsLbL">#}
+
+    <span>用户名:</span><input type="text" placeholder="请输入用户名" name="username">
+
+    <br>
+
+    <button>登录</button>
+
+</form>
+
+
+</body>
+</html>
